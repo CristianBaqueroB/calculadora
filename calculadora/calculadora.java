@@ -31,7 +31,7 @@ public class calculadora {
 			System.out.println(" 15/ Convertir radianes a grados");
 			System.out.println(" 16/ Redondear numeros");
                         System.out.println(" 17/ factorial");
-			System.out.println(" 18/ valor absoluto");
+			System.out.println(" 18/ Valor absoluto");
                         System.out.println(" 19/ Raiz cubica");
 			System.out.println(" 20/ Cerrar ");
 			System.out.print(" Seleccione una de la anteriores opciones ");
@@ -136,7 +136,7 @@ public class calculadora {
 			case 16:
 				System.out.println("Ingrese el valor");
 				num_1 = Double.parseDouble(bufEntrada.readLine());
-				System.out.println("El numero aproximado es "+Math.round(num_1));
+				System.out.println("El numero aproximado es : "+Math.round(num_1));
 				break;
                         case 17:
                                 System.out.println("Ingrese el valor");
@@ -144,20 +144,20 @@ public class calculadora {
                                 for (int i = (int) num_1; i > 0; i--) {
                                     factorial = factorial * i;
                                 }
-                                System.out.println("El factorial de " + num_1 + " es: " + factorial);
+                                System.out.println("El factorial de " + num_1 + " es : " + factorial);
                                 break;
 			case 18:
 				System.out.println("Ingrese el numero ");
 				num_2 = Double.parseDouble(bufEntrada.readLine());
-				System.out.println("El valor absoluto es "+Math.abs(num_2));
+				System.out.println("El valor absoluto es : "+Math.abs(num_2));
 				break;
                         case 19:
 				System.out.print(" Ingrese el numero ");
 				num_1 = Double.parseDouble(bufEntrada.readLine());
-				System.out.println(" La raiz cuadrada "+num_1+" Es "+Math.cbrt(num_1));
+				System.out.println(" La raiz cuadrada "+num_1+" Es : "+Math.cbrt(num_1));
 				break;
 			case 20:
-				System.out.println("Saliendo....");
+				System.out.println("Saliendo...");
 				System.out.println(" Gracias por utilizar la calculadora ");
 				break;
 			default:
